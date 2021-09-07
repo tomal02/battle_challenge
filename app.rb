@@ -1,5 +1,5 @@
 require 'sinatra'
-require "sinatra/reloader" if development?
+require 'sinatra/reloader' if development?
 
 get '/' do
   "hello world!"
@@ -14,8 +14,5 @@ get '/endpage' do
 end
 
 get '/cat' do
-  "<div>
-  <img src=https://i.imgur.com/jFaSxym.png  style = 'border: dashed red;'>
-  </div>"
+  erb(:index)
 end
-

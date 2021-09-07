@@ -14,5 +14,6 @@ get '/endpage' do
 end
 
 get '/cat' do
+  @rand_name = ["Amigo", "Misty", "Almond"].sample
   erb(:index)
 end
